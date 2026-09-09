@@ -1,0 +1,53 @@
+# ============================================================
+# SECURE APP LAB
+# Git Ignore Configuration
+# ============================================================
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# PHP dependencies
+vendor/
+
+# Node dependencies
+node_modules/
+
+# IDE / editor files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Runtime / temporary files
+tmp/
+temp/
+cache/
+
+# Local database artefacts
+*.sqlite
+*.db
+
+# PHPUnit / test output
+coverage/
+.phpunit.cache/
+.phpunit.result.cache
+
+# Security tooling output
+zap-output/
+reports/private/
+
+# Local uploaded files
+app/uploads/*
+!app/uploads/.gitkeep
+
+# Docker runtime overrides
+compose.override.yaml
+docker-compose.override.yml
